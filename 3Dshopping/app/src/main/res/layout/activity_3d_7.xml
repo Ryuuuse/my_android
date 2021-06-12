@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Layout3"
+    android:background="#F4E1B1"
+    >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="お届け先情報入力" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="30dp"
+        android:text="お名前" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="お名前(カナ)" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="郵便番号" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="都道府県" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="市区町村" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="町名・番地" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView7"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="ビル・マンション名" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView8"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:text="電話番号" />
+
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="30dp"
+        android:layout_toRightOf="@+id/textView8"
+        android:gravity="center_horizontal"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@+id/editText1"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignTop="@+id/editText2"
+        android:layout_marginTop="50dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignTop="@+id/editText3"
+        android:layout_marginTop="50dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@+id/editText4"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignTop="@+id/editText5"
+        android:layout_marginTop="50dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_alignTop="@+id/editText6"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="50dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_toRightOf="@+id/textView8"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignTop="@+id/editText7"
+        android:layout_marginTop="50dp"
+        android:inputType="text"/>
+
+    <Button
+        android:id="@+id/B_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBackButtonClick"
+        android:layout_below="@+id/editText8"
+        android:layout_marginTop="50dp"
+        android:layout_toLeftOf="@+id/textureView1"
+        android:text="戻る"
+        android:background="@drawable/custom_button4"/>
+
+    <TextureView
+        android:id="@+id/textureView1"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/editText8"
+        android:layout_marginTop="25dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText8"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/textureView1"
+        android:text="確定"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFF"/>
+
+
+</RelativeLayout>

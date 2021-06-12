@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4E1B1"
+    >
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:text="お支払い金額" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="50dp"
+        android:text="¥3,980" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/textView2"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="220dp"
+        android:layout_marginLeft="50dp"
+        android:text="お支払い方法" />
+
+    <RadioGroup android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/textView3"
+        android:id="@+id/RadioGroup">
+        <RadioButton android:text="カード支払い"
+            android:id="@+id/RadioButton1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+        </RadioButton>
+        <RadioButton android:text="代金引換え"
+            android:id="@+id/RadioButtoni2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+        <RadioButton android:text="銀行振り込み"
+            android:id="@+id/RadioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+        <RadioButton android:text="後払い"
+            android:id="@+id/RadioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+        <RadioButton android:text="キャリア決済"
+            android:id="@+id/RadioButton5"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+        </RadioButton>
+        <RadioButton android:text="スマホ決済サービス"
+            android:id="@+id/RadioButtoni6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </RadioButton>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/B_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onBackButtonClick"
+        android:layout_below="@+id/RadioGroup"
+        android:layout_marginTop="30dp"
+        android:layout_toLeftOf="@+id/textureView2"
+        android:text="戻る"
+        android:background="@drawable/custom_button4"/>
+
+    <TextureView
+        android:id="@+id/textureView2"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/RadioGroup"
+        android:layout_marginTop="200dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/RadioGroup"
+        android:layout_marginTop="30dp"
+        android:layout_toRightOf="@+id/textureView2"
+        android:text="確定"
+        android:background="@drawable/custom_button"
+        android:textColor="#FFFFFF"/>
+
+
+</RelativeLayout>
